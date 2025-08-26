@@ -145,10 +145,11 @@ position: relative;
   }
 
   ul {
-    width: 100%;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
+  width: 100%;         /* ocupa a largura disponível */
+  justify-content: flex-end;  /* mantém alinhamento à direita */
+  flex-wrap: wrap;     /* se não caber, vai quebrar linha */
+}
+
 
   li a {
     font-size: 12px;
@@ -156,12 +157,12 @@ position: relative;
     margin: 3px;
   }
 
-  /* Imagem de fundo */
-  .imagem-fundo {
-    width: 200px;
-    height: 200px;
-    border-radius: 150px;
-  }
+.imagem-fundo {
+  width: 90%;      /* ocupa 90% da largura disponível */
+  max-width: 460px; /* nunca passa de 460px no desktop */
+  height: auto;    /* mantém proporção */
+}
+
 
   /* Formulário */
   .formulario {
