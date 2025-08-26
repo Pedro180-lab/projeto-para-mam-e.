@@ -1,0 +1,189 @@
+body {
+    background-color: pink;
+}
+
+.imagem-menu {
+    width: 70px;
+    height: 70px;
+
+    border-radius: 60px;
+    border: solid 1px black;
+
+    margin-left: 10px ;
+    margin-right: 10px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+
+
+    margin-top: 20px ;
+    margin-bottom: 20px ;
+
+
+    width: 100%;
+    height: 50px;
+
+    background-color: whitesmoke;
+
+}
+
+ul{
+    width: 1030px;
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: end;
+
+    
+}
+
+li {
+    list-style: none;
+    
+}
+
+a {
+    text-decoration: none;
+    margin: 10px;
+    padding: 6px;
+
+    border: solid 1px;
+    background-color: white;
+    border-radius: 6px;
+}
+
+a:hover {
+    background-color: bisque;
+    color: black;
+}
+
+a:active {
+    background-color: wheat;
+    color: black;
+
+}
+
+
+
+
+.imagem-e-formulario {
+
+width: 100%;
+height: 515px;
+
+
+
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+position: relative;
+
+}
+
+.imagem-fundo {
+    width:460px;
+    height: 460px;
+
+    border-radius: 300px;
+
+    
+}
+
+.formulario {
+    width:300px;
+    height:450px;
+
+    display: flex;
+    flex-direction: column;
+   
+    position: absolute;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 24px;
+    font-weight: 700;
+
+    border: solid 1px;
+
+    margin: 30px;
+
+    padding: 30px;
+
+    background-color: hsla(7, 89%, 97%, 0.9);
+
+    border-radius: 5px;
+}
+
+
+
+/* Media query para telas pequenas (máx. 300px) */
+@media (max-width: 300px) {
+
+  /* Nav */
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .imagem-menu {
+    width: 50px;
+    height: 50px;
+    margin: 5px 0;
+  }
+
+  nav p {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+
+  ul {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  li a {
+    font-size: 12px;
+    padding: 4px 6px;
+    margin: 3px;
+  }
+
+  /* Imagem de fundo */
+  .imagem-fundo {
+    width: 200px;
+    height: 200px;
+    border-radius: 150px;
+  }
+
+  /* Formulário */
+  .formulario {
+    width: 90%;
+    max-width: 250px;
+    height: auto;
+    padding: 15px;
+    font-size: 18px;
+    margin: 20px 0;
+  }
+
+  /* Inputs e selects */
+  input, select {
+    font-size: 14px;
+    padding: 6px;
+    margin-bottom: 10px;
+  }
+
+  /* Botão submit */
+  input[type="submit"] {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+
+}
